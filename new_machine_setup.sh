@@ -9,6 +9,7 @@
 
 # git clone ssh:github.com/UltraTimon/dotfiles.git
 # git clone ssh:githun.com/UltraTimon/scripts.git
+# git config --global core.editor vim
 
 echo "todo add:
 - ssh keygen and add to git
