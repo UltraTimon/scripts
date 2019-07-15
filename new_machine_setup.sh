@@ -1,24 +1,27 @@
 #!/bin/bash
 
-# sudo apt-get update
-# sudo apt-get install vim tmux zsh build-essential git-core curl wget
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo apt-get update
+sudo apt-get install vim tmux zsh build-essential git-core curl wget
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# git config --global user.name "Timon Bestebreur"
-# git config --global user.email timonbestebreur@gmail.com
+# Set up git
+git config --global user.name "Timon Bestebreur"
+git config --global user.email timonbestebreur@gmail.com
+git config --global core.editor vim
 
-# git clone ssh:github.com/UltraTimon/dotfiles.git
-# git clone ssh:githun.com/UltraTimon/scripts.git
-# git config --global core.editor vim
+# Generate ssh key pair
+echo "Press enter on the following queries"
+ssh-keygen -t rsa
+echo "Copy/paste the following in the github ssh key textbox:"
+cat ~/.ssh/id_rsa.pub
 
-echo "todo add:
-- ssh keygen and add to git
-- think about more stuff to do
-- test this stuff"  
+# Clone dotfiles and scripts
+git clone ssh:github.com/UltraTimon/dotfiles.git
+git clone ssh:githun.com/UltraTimon/scripts.git
 
-echo "Manually install:
-dropbox
-franz
-protonmail bridge
-thunderbird
+echo "Manually install/configure:
+dropbox (https://www.dropbox.com/)
+franz (https://meetfranz.com/#download)
+protonmail bridge (https://protonmail.com/download/beta/protonmail-bridge_1.1.6-1_amd64.deb)
+thunderbird (https://protonmail.com/bridge/thunderbird#1)
 "
