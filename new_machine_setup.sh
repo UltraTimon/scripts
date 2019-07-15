@@ -19,9 +19,20 @@ cat ~/.ssh/id_rsa.pub
 git clone ssh:github.com/UltraTimon/dotfiles.git
 git clone ssh:githun.com/UltraTimon/scripts.git
 
+# add the alias and zsh file to the .zshrc file
+echo "source ~/dotfiles/zshrc.zsh" | cat >> .zshrc
+echo "source ~/dotfiles/aliases" | cat >> .zshrc
+
+# add the vim configs to a .vimrc file
+echo "source ~/dotfiles/vimrc.vim" | cat >> .vimrc
+
+
+
 echo "Manually install/configure:
 dropbox (https://www.dropbox.com/)
 franz (https://meetfranz.com/#download)
 protonmail bridge (https://protonmail.com/download/beta/protonmail-bridge_1.1.6-1_amd64.deb)
 thunderbird (https://protonmail.com/bridge/thunderbird#1)
 "
+
+
