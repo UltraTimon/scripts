@@ -1,3 +1,5 @@
 #!/bin/bash
 
-git add . && git commit && git push
+git add . && 
+git commit && 
+git push
