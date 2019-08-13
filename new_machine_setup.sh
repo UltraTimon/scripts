@@ -1,5 +1,5 @@
 #!/bin/bash
-: '
+echo '
 sudo apt-get update
 sudo apt-get install vim tmux zsh build-essential git-core curl wget concalc 
 snap install termdown
