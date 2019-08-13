@@ -1,5 +1,5 @@
 #!/bin/bash
 
 git add . && 
-git commit && 
-git push
+git commit -qm "$*" && 
+git push -q
