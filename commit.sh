@@ -1,4 +1,4 @@
 #!/bin/bash
 
-git add . && 
-    git commit
+git add . &&
+git commit -m "\$\@"
