@@ -1,6 +1,7 @@
 #!/bin/bash
 
-take $1 &&
+mkdir $1 &&
+cd $1 &&
 git init && 
 git add . && 
 git commit -m "Initial commit" && 
